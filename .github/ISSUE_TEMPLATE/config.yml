@@ -3,3 +3,9 @@ contact_links:
   - name: Security vulnerability
     url: https://github.com/praxia-atelier/praxia-agent-core/security/advisories/new
     about: Please report security issues privately. See SECURITY.md.
+  - name: Talk to us on WhatsApp
+    url: https://wa.me/34650017962?text=Hola%2C%20vengo%20de%20GitHub%20(Praxia%20Agent%20Core)
+    about: Quick questions or trouble with the quick start.
+  - name: Email
+    url: mailto:praxia.atelier@gmail.com
+    about: Anything else.

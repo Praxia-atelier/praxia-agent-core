@@ -203,6 +203,14 @@ See [SECURITY.md](SECURITY.md) to report a vulnerability.
 
 The core will stay small. See [docs/scope.md](docs/scope.md) for what is intentionally out of scope.
 
+## Questions or problems?
+
+Talk to us directly. We usually reply the same day.
+
+- **WhatsApp:** [message us](https://wa.me/34650017962?text=Hola%2C%20vengo%20de%20GitHub%20(Praxia%20Agent%20Core))
+- **Email:** [praxia.atelier@gmail.com](mailto:praxia.atelier@gmail.com)
+- **Bugs and feature ideas:** [open an issue](https://github.com/praxia-atelier/praxia-agent-core/issues/new/choose)
+
 ## Contributing
 
 Issues and pull requests are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) first. Every contribution must run offline and use fictional data.
