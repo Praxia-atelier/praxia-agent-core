@@ -1,0 +1,24 @@
+name: Connector request
+description: Ask for a tool or context connector (e.g. a ticketing system, a calendar).
+labels: [connector]
+body:
+  - type: input
+    id: system
+    attributes:
+      label: System
+      placeholder: e.g. a ticketing or calendar service
+    validations:
+      required: true
+  - type: textarea
+    id: use
+    attributes:
+      label: Use case
+      description: Which events, context or actions you need, and the policy level each action should have (AUTO, REQUIRES_APPROVAL, MANUAL_ONLY).
+    validations:
+      required: true
+  - type: checkboxes
+    id: mock
+    attributes:
+      label: Testing
+      options:
+        - label: I can describe how this connector would be tested with a mock or sandbox.

@@ -1,0 +1,23 @@
+name: Example request
+description: Suggest a new runnable example built on the core.
+labels: [example]
+body:
+  - type: textarea
+    id: flow
+    attributes:
+      label: Flow
+      description: The event, agents, tools and policies, e.g. "support ticket → classify → draft reply (REQUIRES_APPROVAL) → audit".
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What it would teach
+      description: Which concept of the core this example makes clearer.
+  - type: checkboxes
+    id: data
+    attributes:
+      label: Data
+      options:
+        - label: The example can run offline with fictional data and mock tools.
+          required: true

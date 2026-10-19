@@ -1,0 +1,55 @@
+{
+  "name": "@praxia/agent-core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Build auditable, provider-independent AI workflows for real business operations.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "scan:secrets": "node scripts/scan-secrets.mjs",
+    "demo:inbox": "tsx examples/inbox-agent/run.ts",
+    "demo:sales": "tsx examples/sales-agent/run.ts",
+    "demo:quote": "tsx examples/quote-agent/run.ts",
+    "demo": "tsx examples/run-all.ts",
+    "check": "npm run lint && npm run typecheck && npm test && npm run build && npm run scan:secrets"
+  },
+  "keywords": [
+    "ai-agents",
+    "agentic-ai",
+    "workflow-automation",
+    "llm",
+    "multi-model",
+    "ai-orchestration",
+    "human-in-the-loop",
+    "audit-log",
+    "typescript"
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2"
+  }
+}

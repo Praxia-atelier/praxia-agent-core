@@ -1,0 +1,31 @@
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Local runtime output (demo audit logs)
+.praxia/
+
+# Secrets: never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+secrets/
+private/
+customer-data/
+production/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.log
+npm-debug.log*

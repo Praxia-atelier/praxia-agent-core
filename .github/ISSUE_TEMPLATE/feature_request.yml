@@ -1,0 +1,22 @@
+name: Feature request
+description: Suggest an improvement to the core runtime.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What are you trying to do, and what gets in the way?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: The smallest change that would solve it.
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: This fits a small, provider-independent core (see docs/scope.md).
